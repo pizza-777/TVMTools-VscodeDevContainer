@@ -6,7 +6,7 @@ RUN apt update && \
     apt install -y nodejs && \
     apt install -y npm
 
-RUN npm install -g everdev
+RUN npm install -g everdev@1.6.0
 RUN everdev sol update
 
 RUN apt install wget
