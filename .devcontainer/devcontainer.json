@@ -1,0 +1,40 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	//More info: https://containers.dev/guide/dockerfile
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"everscale.solidity-support"				
+			],
+			"settings": {
+				"files.associations": {
+					"*.sol": "ton-solidity",
+					"*.tsol": "ton-solidity"
+				},
+				"[ton-solidity]": {
+					"editor.defaultFormatter": "everscale.solidity-support",
+					"files.trimTrailingWhitespace": false,
+					"files.trimFinalNewlines": false,
+					"editor.formatOnSave": false,
+					"editor.formatOnPaste": false,
+					"editor.formatOnType": false
+				}
+			}
+		}
+	}
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
