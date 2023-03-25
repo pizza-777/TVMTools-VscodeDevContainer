@@ -17,4 +17,4 @@ docker build -t evertools ./
 docker run -it -v "$(pwd)/app":/home evertools sh -c "cd /home && /bin/bash"
 ```
 
-```"$(pwd)/app"``` is path to your working directory
+```"$(pwd)/app"``` is example path to your application directory
