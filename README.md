@@ -4,23 +4,8 @@
 - [tonos-cli](https://github.com/tonlabs/tonos-cli)
 - [solc](https://github.com/tonlabs/TON-Solidity-Compiler)
 - [tvm_linker](https://github.com/tonlabs/TVM-linker)
+- [tvm-asm](https://github.com/tonlabs/ever-assembler)
 - [everscale.solidity-support extension](https://marketplace.visualstudio.com/items?itemName=everscale.solidity-support) for vscode
-
-## Build from Dockerfile
-
-```bash
-docker build -t evertools ./.devcontainer
-```
-
-## Run
-
-```bash
-docker run -it -v "$(pwd)/app":/home evertools sh -c "cd /home && /bin/bash"
-```
-
-```"$(pwd)/app"``` is example path to your application directory
-
-## Run all of this and vscode with everscale.solidity-support extension in a docker
 
 1. Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 
