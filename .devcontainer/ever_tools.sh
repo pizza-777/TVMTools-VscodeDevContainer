@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-apt update 
-
 working_dir=$PWD
 cd /tmp
 
@@ -23,5 +21,5 @@ mv /tmp/ever-assembler/target/release/asm /usr/bin/tvm-asm
 rm -r /tmp/ever-assembler
 cd $working_dir
 
-# make all tool executable
+# make all tools executable
 PATH="/root/.everdev/solidity:$PATH"

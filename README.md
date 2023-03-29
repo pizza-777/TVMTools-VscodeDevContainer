@@ -1,4 +1,6 @@
-# Everscale tools with docker
+# TVM tools with vscode devcontainer
+
+## Everscale
 
 - [everdev](https://github.com/tonlabs/everdev)
 - [tonos-cli](https://github.com/tonlabs/tonos-cli)
@@ -6,6 +8,11 @@
 - [tvm_linker](https://github.com/tonlabs/TVM-linker)
 - [tvm-asm](https://github.com/tonlabs/ever-assembler)
 - [everscale.solidity-support extension](https://marketplace.visualstudio.com/items?itemName=everscale.solidity-support) for vscode
+
+## TON
+- [func, fift, lite-client, toncli](https://github.com/ton-blockchain/ton/releases)
+
+## Installation
 
 1. Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension
 

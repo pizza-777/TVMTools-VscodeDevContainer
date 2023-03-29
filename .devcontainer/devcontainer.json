@@ -7,15 +7,16 @@
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/rust:1": {},
-		"ghcr.io/devcontainers/features/node:1": {}
-		//"ghcr.io/devcontainers/features/python:1":{},
-		//"ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {}
+		"ghcr.io/devcontainers/features/node:1": {},
+		"ghcr.io/devcontainers/features/python:1":{},
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": ".devcontainer/post_create_command.sh",
 	// Configure tool-specific properties.
+	//"privileged": true,
 	"customizations": {
 		"vscode": {
 			"extensions": [
