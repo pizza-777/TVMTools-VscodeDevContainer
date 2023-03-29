@@ -6,8 +6,8 @@ working_dir=$PWD
 cd /tmp
 
 # Install everdev, solc, tvm_linker, tvm-asm
-npm install -g everdev@1.6.0 && \
-    everdev sol set --compiler 0.65.0
+npm install -g everdev@1.6.1 && \
+    everdev sol set --compiler 0.67.0
 
 # install tonos-cli
 apt install wget && \
