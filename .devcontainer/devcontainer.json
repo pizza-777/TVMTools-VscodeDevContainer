@@ -3,14 +3,16 @@
 {
 	"name": "EverTools",
 	//More info: https://containers.dev/guide/dockerfile
-	"image": "ubuntu:rolling",
+	"image": "ubuntu:latest",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
 		"ghcr.io/devcontainers/features/rust:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/python:1":{},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
 		"ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {}
 	},
+	"privileged": true,
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
